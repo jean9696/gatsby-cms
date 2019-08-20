@@ -1,7 +1,7 @@
 ---
 title: sub test
 pages:
-  - content: sub test
+  - body: test
     language: fr
     parent: test
 ---
