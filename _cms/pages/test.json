@@ -4,6 +4,10 @@
     {
       "language": "fr",
       "body": "test"
+    },
+    {
+      "language": "en",
+      "body": "blabla"
     }
   ]
 }
