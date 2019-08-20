@@ -1,7 +1,7 @@
 ---
 title: test
 pages:
-  - content: test
+  - body: test
     language: fr
 ---
 
