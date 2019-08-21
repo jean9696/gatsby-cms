@@ -10,13 +10,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "build:types": "apollo codegen:generate --localSchemaFile=schema.graphql --target=typescript --includes=src/**/*.tsx --tagName=graphql --addTypename types"
+    "build:types": "apollo codegen:generate --localSchemaFile=schema.graphql --target=typescript --includes=src/**/*.ts --tagName=graphql --addTypename types"
   },
   "dependencies": {
     "gatsby": "^2.13.39",
     "gatsby-plugin-netlify-cms": "^4.1.7",
     "gatsby-source-filesystem": "^2.1.9",
-    "gatsby-transformer-remark": "^2.6.14",
+    "gatsby-transformer-json": "^2.2.2",
     "netlify-cms-app": "^2.9.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

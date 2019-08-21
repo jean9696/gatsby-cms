@@ -8,31 +8,18 @@ module.exports = {
         path: `${__dirname}/_cms/pages/`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/_cms/sections/`,
+      },
+    },
 
     /// Config
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: `gatsby-transformer-json`,
       options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-        // Plugins configs
-        plugins: [],
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify-cms`,
-      options: {
-        /**
-         * One convention is to place your Netlify CMS customization code in a
-         * `src/cms` directory.
-         */
-        modulePath: `${__dirname}/src/cms/index.ts`,
       },
     },
     {
@@ -41,6 +28,7 @@ module.exports = {
         alias: {
           '@components': 'src/components',
           '@pages': 'src/pages',
+          '@layouts': 'src/layouts',
         },
         extensions: ['ts', 'tsx', 'js'],
       },
@@ -68,6 +56,16 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms`,
+      options: {
+        /**
+         * One convention is to place your Netlify CMS customization code in a
+         * `src/cms` directory.
+         */
+        modulePath: `${__dirname}/src/cms/index.ts`,
       },
     },
   ],
