@@ -1,17 +1,16 @@
+import { borders } from 'netlify-cms-ui-default'
 import * as React from 'react'
 
 import { WidgetProps } from './data'
-import { borders } from 'netlify-cms-ui-default'
 
 const PageWidget: React.FunctionComponent<PageWidgetProps> = ({
   value,
   onChange,
   field,
-                                                                setActiveStyle,
-                                                                classNameWrapper,
+  setActiveStyle,
+  classNameWrapper,
 }) => {
-
-console.log(borders)
+  console.log(borders)
   const languages = field.get('languages').toJS()
   return <div className={classNameWrapper}>test</div>
 }

@@ -19,8 +19,7 @@ module.exports = {
     /// Config
     {
       resolve: `gatsby-transformer-json`,
-      options: {
-      },
+      options: {},
     },
     {
       resolve: `gatsby-plugin-alias-imports`,
