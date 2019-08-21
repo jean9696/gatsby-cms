@@ -1,0 +1,11 @@
+{
+  "collection": "pages",
+  "title": "Test with type",
+  "path": "test2",
+  "pages": [
+    {
+      "language": "fr",
+      "body": "test"
+    }
+  ]
+}
