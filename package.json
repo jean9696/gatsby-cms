@@ -13,6 +13,7 @@
     "build:types": "apollo codegen:generate --localSchemaFile=schema.graphql --target=typescript --includes=src/**/*.ts --tagName=graphql --addTypename types"
   },
   "dependencies": {
+    "@habx/thunder-ui": "^4.11.0",
     "gatsby": "^2.13.39",
     "gatsby-plugin-netlify-cms": "^4.1.7",
     "gatsby-source-filesystem": "^2.1.9",

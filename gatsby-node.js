@@ -7,7 +7,7 @@ exports.createPages = ({ actions, graphql }) => {
       allPagesJson {
         nodes {
           path
-          pages {
+          page {
             body
             language
           }

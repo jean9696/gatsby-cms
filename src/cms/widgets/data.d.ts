@@ -1,5 +1,5 @@
 export interface WidgetProps<ConfigKeys> {
-  onChange: Function
+  onChange: (value: any) => void
   forID: string
   value?: any
   field: {
